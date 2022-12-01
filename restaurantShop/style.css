@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navBox {
+    display: flex;
+    flex-flow: row wrap;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(161, 161, 161);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.buttonMenu {
+    background-color: rgb(161, 161, 161);
+    border: 2px solid rgb(174, 168, 168);
+    text-shadow: 2px 2px 10px rgb(114, 69, 69);
+    position: relative;
+    font-size: 20px;
+    width: 60px;
+    float: right;
+    cursor: pointer;
+}
+
+.buttonMenu:hover {
+    background-color: rgb(223, 181, 181);
+    text-shadow: 5px 5px 15px rgb(199, 214, 36);
+    color: rgb(155, 60, 6);
+    font-size: 23px;
+    text-shadow: rgb(200, 120, 120);
+    transition-delay: 200ms;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+    scale: 105%;
+}
+
+.logoNav {
+    margin: 10px;
+    position: relative;
+    width: 190px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.menu {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row-reverse;
+    animation-duration: 1s;
+}
+
+.menu div {
+    height: 80px;
+    font-size: 30px;
+    position: relative;
+    border-left: 2px solid rgb(174, 168, 168);
+}
+
+.menu div i {
+    position: relative;
+    top: 20%;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.hide {
+    visibility: hidden;
+
+}
+
+.slideFood {
+    list-style-type: none;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: aquamarine;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    opacity: 100%;
+    background-color: coral;
+    animation: wip 3s infinite;
+}
+
+@keyframes wip {
+    0% {opacity: 100%;}
+    50% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes mymove {
+    0% {left: 0px;}
+    50% {left: 200px;}
+    100% {left: 0;}
+  }
