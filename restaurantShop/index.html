@@ -6,27 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Restaurant</title>
+    <title>Restuarant</title>
 </head>
 
 <body>
-    <nav class="navBox">
-        <div><img src="./images/logo.png" class="logoNav"></div>
-        <div class="menu hide">
-            <div><i class="fa-solid fa-user"></i></div>
-            <div><i class="fa-solid fa-basket-shopping"></i></div>
-            <div><i class="fa-solid fa-mug-saucer"></i></div>
-            <div><i class="fa-solid fa-ice-cream"></i></div>
-            <div><i class="fa-solid fa-utensils"></i></div>
-        </div>
-        <button onclick="showHide()" class="buttonMenu"><i class="fa-solid fa-bars"></i></button>
-    </nav>
-    <ul id="showFood"></ul>
-    <ul id="showDessert"></ul>
-    <ul id="showDrink"></ul>
-    <div class="ball"></div>
-    <div class="box"></div>
+    <header>
+        <h1>Wellcome to "What Ever" restuarant !!!</h1>
+        <h4>This restuarant has many kind of food.</h4>
+        <h2 id="shine">Let's see what you want to pick</h2>
+    </header>
 
+    <ul>
+        <li class="logo"><a href="#"><img src="./images/logo.png"></a></li>
+        <ul class="icon">
+            <li class="menu"><a href="#" class="text">
+                    <p class="fa-solid fa-utensils"></p>
+                </a></li>
+            <li class="menu"><a href="#" class="text">
+                    <p class="fa-solid fa-ice-cream"></p>
+                </a></li>
+            <li class="menu"><a href="#" class="text">
+                    <p class="fa-solid fa-mug-saucer"></p>
+                </a></li>
+            <li class="menu"><a href="#" class="text">
+                    <p class="fa-solid fa-user"></p>
+                </a></li>
+            <li class="menu"><a href="#" class="text">
+                    <p class="fa-solid fa-basket-shopping"></p>
+                </a></li>
+            <li>
+                <button class="nav" onclick="showSee()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </li>
+        </ul>
+    </ul>
 
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/e9c569a785.js" crossorigin="anonymous"></script>
