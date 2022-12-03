@@ -27,6 +27,8 @@ header h1 {
 
 /* nav bar start */
 ul {
+    position: -webkit-sticky;
+    position: sticky;
     background-color: #ffac81;
     display: flex;
     list-style: none;
