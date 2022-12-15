@@ -26,7 +26,7 @@ header h1 {
 /* header end */
 
 /* nav bar start */
-ul {
+.nav {
     position: -webkit-sticky;
     position: sticky;
     background-color: #ffac81;
@@ -40,7 +40,13 @@ ul {
     height: 4rem;
 }
 
+.icon {
+    display: flex;
+    flex-direction: row;
+}
+
 .icon li {
+    list-style: none;
     margin-top: 20px;
     margin-right: 20px;
     font-size: 26px;
@@ -50,7 +56,7 @@ ul {
     color: #281656;
 }
 
-.nav {
+.butnav {
     background: none;
     color: #281656;
     font-size: 26px;
@@ -66,7 +72,7 @@ ul {
     transition-timing-function: ease-in-out;
 }
 
-.nav:hover, .text p:hover {
+.butnav:hover, .text p:hover {
     scale: 112%;
     color: #815ddb;
     text-shadow: 0 0 8px #5fe7c3;
@@ -74,11 +80,53 @@ ul {
     transition-duration: 300ms;
     transition-timing-function: ease-in-out;
 }
+/* nav bar end */
 
+/* display */
 .toggle {
     display: none;
 }
-/* nav bar end */
+
+.show-pic {
+    display: block;
+}
+/* display */
+
+/* slide picture start */
+.box {
+    background-image: url("./images/kitchen.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 4rem;
+    display: flex;
+}
+
+.item-in-box {
+    border: 0.5rem solid #180d36;
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50rem;
+    height: 50rem;
+    flex-grow: 0.1;
+}
+
+.text-box {
+    /* position: relative;
+    top: 50%;
+    text-transform: a; */
+    text-align: end;
+    flex-grow: 0.9;
+}
+
+.text-box :nth-child(6), .text-box :nth-child(4) {
+    position: relative;
+    top: 60%;
+    color: red;
+}
+/* slide picture end */
 
 /* color theme palets from "https://www.color-hex.com/color-palette/1020144" */
 /* color font palets from "https://www.color-hex.com/color-palette/1020161" */
